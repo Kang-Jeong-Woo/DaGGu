@@ -44,7 +44,7 @@ function HomePage() {
 
     // 2시간마다 토큰 갱신
     setInterval((()=>{
-        axios.get("http://localhost:8123/api/refreshtoken", { withCredentials: true })
+        axios.get("http://127.0.0.1:8123/api/refreshtoken", { withCredentials: true })
             .then((result) => {
               console.log(result.data)
             })
