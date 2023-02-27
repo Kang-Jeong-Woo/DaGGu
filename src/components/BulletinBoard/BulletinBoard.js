@@ -23,7 +23,7 @@ const BulletinBoard = props => {
     // useEffect(()=>{
     //     try {
     //         axios.post(
-    //             "http://localhost:8123/api/deleteimg",
+    //             "https://127.0.0.1:8123/api/deleteimg",
     //             {user: props.user, postItData: postItData},
     //             { withCredentials: true })
     //         .then((result) => {

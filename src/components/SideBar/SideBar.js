@@ -37,7 +37,7 @@ const SideBar = (props) => {
 
     const logout = () => {
         axios.post(
-            "http://localhost:8123/api/logout",
+            "https://127.0.0.1:8123/api/logout",
             { withCredentials: true }
         ).then((result) => {
             if (result.status === 200) {
