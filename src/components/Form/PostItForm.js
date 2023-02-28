@@ -39,7 +39,7 @@ const PostItForm = (props) => {
 
     const showImage = useMemo(() => {
         if (!imageFile && imageFile === null) {
-            return <Image src={""} alt="사진 없음"/>
+            return <img src={""} alt="사진 없음"/>
         }
         return <ShowFileImage src={imageFile.thumbnail} alt={imageFile.type} onClick={handleClickFileInput}/>
     }, [imageFile]);

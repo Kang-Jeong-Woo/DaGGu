@@ -4,6 +4,8 @@ import {Provider} from "react-redux";
 import store from "@/store";
 import { config } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
+import Image from "next/image";
+import classes from "/src/styles/Home.module.css";
 import {BindingSpring} from "@/components/UI/BindingSpring";
 config.autoAddCss = false
 

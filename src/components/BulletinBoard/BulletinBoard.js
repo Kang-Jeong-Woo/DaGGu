@@ -1,6 +1,6 @@
 import classes from "./BulletinBoard.module.css";
 import PostIt from "@/components/BulletinBoard/PostIt";
-import React from "react";
+import React, { useEffect } from "react";
 import Canvas from "@/components/Canvas/Canvas";
 import FontPostIt from "@/components/BulletinBoard/FontPostIt";
 import {useSelector} from "react-redux";
@@ -23,7 +23,7 @@ const BulletinBoard = props => {
     // useEffect(()=>{
     //     try {
     //         axios.post(
-    //             "https://127.0.0.1:8123/api/deleteimg",
+    //             "http://localhost:8123/api/deleteimg",
     //             {user: props.user, postItData: postItData},
     //             { withCredentials: true })
     //         .then((result) => {
@@ -84,6 +84,8 @@ const BulletinBoard = props => {
                         key={table.id}
                         id={table.id}
                         table={table.contents}
+                        style={table.style}
+                        color={table.color}
                         width={table.width}
                         height={table.height}
                         pinned={table.pinned}
